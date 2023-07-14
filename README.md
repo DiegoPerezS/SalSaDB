@@ -1,5 +1,6 @@
 # SalSaDB
 A small database that links several Gene Identifiers from Atlantic salmon
+This is a collaborative Database, which means that the users are free to improve the scope of this database and are free to use the scripts to do so. Any contribution is welcome and must include a README file and the script used to obtain the dataset.
 
 Database details:
 
