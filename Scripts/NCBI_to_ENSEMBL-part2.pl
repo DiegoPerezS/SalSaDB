@@ -2,8 +2,8 @@
 ########################################################################
 #
 #	This script was created by Diego Pérez-Stuardo
-#	File generated from the part 1 of this script or:
-#		data frame with list of NCBI gene IDs in one column
+#	File generated from part 1 of this script or:
+#		Data frame with a list of NCBI gene IDs in one column
 #
 ########################################################################
 
