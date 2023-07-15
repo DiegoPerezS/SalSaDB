@@ -43,7 +43,7 @@ while (my $line = <$fh>){
 		print $finalfh "$GID\tgood\n"
 		#	Depuration code
 		#~ print "$class\n";
-		#	Filter data by molecule class
+		#	Filter data by sequence class
 		#~ if ($class =~ "mRNA"){
 			#~ print "$class\t$GID\n";
 			#~ print "$GID\tgood\n";
