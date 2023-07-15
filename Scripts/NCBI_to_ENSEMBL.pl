@@ -3,7 +3,7 @@
 #
 #	This script was created by Diego Pérez-Stuardo
 #	Files needed to run this script: genome GFF file from NCBI
-#	It is needed to excecute the "unique" function in R to obtain a
+#	It is needed to execute the "unique" function in R to obtain a
 #		non-redundant dataset
 #
 ########################################################################
@@ -13,24 +13,22 @@ use warnings;
 
 #	Directory that contains the source file
 my $in_dir = "../Genome/Salmo_salar-information/GCF_905237065.1";
-#	Temporal directory to store the metadata, which will be deleted after its use
-my $temp_dir = "../Genome/Salmo_salar-information/temp";
 #	GFF file name
 my $gff = "genomic.gff";
 #	Output file
 my $newfile = "NCBI_list.txt";
 
 #------Declarations-------
-my $file = "$in_dir/$gff"; 	#	indicate where the gff file using the previous folder and files declarations
-my $GID = "";				#	empty, to save the NCBI GID
-my $class = "";				#	empty. to save the class of the sequence in case it is needed to filter by class (mRNA, ncRNA, tRNA, etc)
+my $file = "$in_dir/$gff"; 	#	Indicate where the gff file using the previous folder and files declarations
+my $GID = "";				#	Empty, to save the NCBI GID
+my $class = "";				#	Empty, to save the class of the sequence in case it is needed to filter by class (mRNA, ncRNA, tRNA, etc)
 
-#	Open newfile
+#	Open the new file
 system "touch $newfile";
 open (my $finalfh, '>', $newfile) or die "Can't open '$file' $!\n";
 print $finalfh "NCBI_GID\tcheck\n";
 
-#	 Open input file and reading line by line
+#	 Open the input file and read line by line
 open (my $fh, '<', $file) or die "Can't open '$file' $!\n";
 while (my $line = <$fh>){
 	chomp $line;
